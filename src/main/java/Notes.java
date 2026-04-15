@@ -2,7 +2,7 @@
 	* File: Lesson 4.6 - Data type checking
 	* Author: Mr. Kalisz
 	* Date Created: April 12, 2023
-	* Date Last Modified: April 12, 2023
+	* Date Last Modified: April 15, 2026
 	*/
 
 import java.util.Scanner;
@@ -23,6 +23,7 @@ class Notes {
 
 		// System.out.print("Input an integer: ");
 		// num = input.nextInt();
+		// input.nextLine();
 		// System.out.println(num + 2);
 
 		//checking a data type
@@ -33,7 +34,7 @@ class Notes {
 
 		//use hasNextInt()
 		while (!(input.hasNextInt())) { //this is our input
-			input.nextLine();
+			input.nextLine(); //clear out the scanner
 			System.out.println("That was not a number!");
 			System.out.print("Input an integer: ");
 		}
